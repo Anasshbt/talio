@@ -2,6 +2,14 @@
 
 Bienvenue dans le dépôt du test technique Talio. Ce projet contient une plateforme de matching talent×entreprise, ainsi que les réponses aux exercices de DevOps, Product Thinking, Code Review et IA.
 
+## 🌍 Déploiement en ligne (Live Demo)
+L'application est déployée sur mon serveur personnel (Contabo) et restera **accessible pendant 7 jours** (à compter du **16 avril 2026**).
+
+- 🌐 **Frontend (Application Web React / Exercices interactifs)** : [http://62.171.131.141:8088/](http://62.171.131.141:8088/)
+- ⚙️ **Backend (API FastAPI Swagger Docs)** : [http://62.171.131.141:8089/docs](http://62.171.131.141:8089/docs)
+
+---
+
 ## 📂 Structure du projet
 
 La plateforme dispose d'une application React unifiée pour naviguer à travers tous les exercices :
@@ -75,4 +83,4 @@ Pour supprimer complètement les données (base de données) et repartir à zér
 docker compose down -v
 ```
 
-> **Astuce** : Si vous mettez à jour votre code (via `git pull`), n'oubliez pas de relancer `docker compose up -d --build` pour reconstruire les images Docker.
+
