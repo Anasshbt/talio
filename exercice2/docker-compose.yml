@@ -18,7 +18,7 @@ services:
       start_period: 5s
     # Exposed for local dev/inspection only — remove in production
     ports:
-      - "5432:5432"
+      - "5433:5432"
     networks:
       - internal
 
