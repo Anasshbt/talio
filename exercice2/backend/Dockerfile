@@ -21,8 +21,7 @@ WORKDIR /app
 # ── Dependencies (separate layer for caching) ─────────────────────────────────
 COPY exercice1/backend/pyproject.toml ./
 # uv.lock is optional — if present it pins exact versions (reproducible builds)
-RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --no-dev --no-install-project
+RUN uv sync --no-dev --no-install-project
 
 # ── Application source ────────────────────────────────────────────────────────
 COPY exercice1/backend/app      ./app

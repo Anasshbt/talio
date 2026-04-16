@@ -47,7 +47,7 @@ cp .env.example .env
 Toujours dans le dossier `exercice2`, lancez l'application :
 
 ```bash
-docker compose up -d --build
+docker-compose up -d --build
 ```
 Cette commande va :
 1. Démarrer PostgreSQL.
