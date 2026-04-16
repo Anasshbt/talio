@@ -1,0 +1,27 @@
+# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/.venv/
+**/.pytest_cache/
+**/*.egg-info/
+
+# Node
+**/node_modules/
+**/dist/
+**/.npm/
+
+# Git & IDE
+.git/
+.gitignore
+**/.DS_Store
+**/.env
+**/.env.local
+
+# Docker build artifacts
+**/Dockerfile
+**/*.md
+
+# Test / dev artefacts
+**/coverage/
+**/.coverage

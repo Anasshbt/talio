@@ -1,0 +1,145 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# Talio — .gitignore
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Environment variables (NEVER commit real secrets) ─────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+wheels/
+sdist/
+.eggs/
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+coverage/
+htmlcov/
+*.coveragerc
+nosetests.xml
+test-results/
+junit*.xml
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# uv
+uv.lock.bak
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Build output
+dist/
+build/
+
+# Vite
+.vite/
+
+# Next.js (if added later)
+.next/
+out/
+
+# ── Docker ─────────────────────────────────────────────────────────────────────
+# Don't ignore docker-compose files — they're needed to run the app
+# But ignore local override files with secrets
+docker-compose.override.yml
+docker-compose.local.yml
+.dockerignore.local
+
+# ── IDE / Editor ─────────────────────────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.iml
+*.iws
+*.ipr
+.fleet/
+.cursor/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+*.log.*
+
+# ── Certificates / Keys (safety net) ─────────────────────────────────────────
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.gpg
+
+# ── Temporary files ───────────────────────────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+.cache/
+tmp/
+
+# ── Database dumps ────────────────────────────────────────────────────────────
+*.sql
+*.dump
+*.sqlite
+*.sqlite3
+*.db
+
+# ── Alembic (keep migrations, ignore generated temp) ─────────────────────────
+# Keep: exercice1/backend/alembic/versions/*.py
+# These should be committed — they define your schema history
+
+# ── CI artifacts ─────────────────────────────────────────────────────────────
+.github/.cache/
